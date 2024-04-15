@@ -1,10 +1,13 @@
 # conftest.py
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-function-docstring
+
 import pytest
 from httpx import AsyncClient
 from app.main import app  # Adjust import path as necessary
 
 @pytest.fixture
-async def client():
+async def async_client():
     async with AsyncClient(app=app, base_url="http://testserver") as ac:
         yield ac
 
