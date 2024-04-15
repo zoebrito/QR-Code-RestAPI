@@ -1,5 +1,5 @@
 # RestAPI for Creating QR Codes
-# Install
+## Install
 1. Clone
 2. Make virtual environment:  python3 -m venv venv
 3. Activate virtual environment: source venv/bin/activate
